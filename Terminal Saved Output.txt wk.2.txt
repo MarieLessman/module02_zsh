@@ -1,0 +1,129 @@
+Last login: Sun Sep  6 18:08:45 on ttys000
+marie@Maries-MacBook-Neo ~ % cd ~/ism3232/module02_zsh
+marie@Maries-MacBook-Neo module02_zsh % mkdir week2_lab
+mkdir: week2_lab: File exists
+marie@Maries-MacBook-Neo module02_zsh % pwd
+/Users/marie/ism3232/module02_zsh
+marie@Maries-MacBook-Neo module02_zsh % ls
+week2_lab
+marie@Maries-MacBook-Neo module02_zsh % ls-la
+zsh: command not found: ls-la
+marie@Maries-MacBook-Neo module02_zsh % ls - la
+ls: -: No such file or directory
+ls: la: No such file or directory
+marie@Maries-MacBook-Neo module02_zsh % ls -la
+total 0
+drwxr-xr-x@  3 marie  staff   96 Sep  2 18:12 .
+drwxr-xr-x@ 11 marie  staff  352 Aug 30 13:15 ..
+drwxr-xr-x   2 marie  staff   64 Sep  2 18:12 week2_lab
+marie@Maries-MacBook-Neo module02_zsh % clear
+
+
+
+
+
+
+
+
+
+
+
+marie@Maries-MacBook-Neo module02_zsh % pwd
+/Users/marie/ism3232/module02_zsh
+marie@Maries-MacBook-Neo module02_zsh % ls
+week2_lab
+marie@Maries-MacBook-Neo module02_zsh % ls -la
+total 0
+drwxr-xr-x@  3 marie  staff   96 Sep  2 18:12 .
+drwxr-xr-x@ 11 marie  staff  352 Aug 30 13:15 ..
+drwxr-xr-x   2 marie  staff   64 Sep  2 18:12 week2_lab
+marie@Maries-MacBook-Neo module02_zsh % cd ..
+marie@Maries-MacBook-Neo ism3232 % pwd
+/Users/marie/ism3232
+marie@Maries-MacBook-Neo ism3232 % cd ~/ism3232
+marie@Maries-MacBook-Neo ism3232 % tree -L 2
+.
+├──  module04_programming
+├──  module06_oop
+├── data screenshots
+├── module01_setup
+│   └── hello_ism3232.py
+├── module02_zsh
+│   └── week2_lab
+├── module03_git_github
+├── module05_functions
+├── module07_final_project
+└── README.md
+
+10 directories, 2 files
+marie@Maries-MacBook-Neo ism3232 % cd module02_zsh/week2_lab
+marie@Maries-MacBook-Neo week2_lab % pwd
+/Users/marie/ism3232/module02_zsh/week2_lab
+marie@Maries-MacBook-Neo week2_lab % touch notes.txt commands.txt hello_week2.py
+marie@Maries-MacBook-Neo week2_lab % ls -la
+total 0
+drwxr-xr-x  5 marie  staff  160 Sep  6 18:21 .
+drwxr-xr-x@ 3 marie  staff   96 Sep  2 18:12 ..
+-rw-r--r--  1 marie  staff    0 Sep  6 18:21 commands.txt
+-rw-r--r--  1 marie  staff    0 Sep  6 18:21 hello_week2.py
+-rw-r--r--  1 marie  staff    0 Sep  6 18:21 notes.txt
+marie@Maries-MacBook-Neo week2_lab % echo 'Week 2 navigation practice' > notes.txt
+marie@Maries-MacBook-Neo week2_lab % cat notes.txt
+Week 2 navigation practice
+marie@Maries-MacBook-Neo week2_lab % head -1 notes.txt
+Week 2 navigation practice
+marie@Maries-MacBook-Neo week2_lab % cp notes.txt notes_backup.txt
+marie@Maries-MacBook-Neo week2_lab % mv hello_week2.py week2_script.py
+marie@Maries-MacBook-Neo week2_lab % ls -la
+total 16
+drwxr-xr-x  6 marie  staff  192 Sep  6 18:30 .
+drwxr-xr-x@ 3 marie  staff   96 Sep  2 18:12 ..
+-rw-r--r--  1 marie  staff    0 Sep  6 18:21 commands.txt
+-rw-r--r--  1 marie  staff   27 Sep  6 18:29 notes_backup.txt
+-rw-r--r--  1 marie  staff   27 Sep  6 18:23 notes.txt
+-rw-r--r--  1 marie  staff    0 Sep  6 18:21 week2_script.py
+marie@Maries-MacBook-Neo week2_lab % code week2_script.py
+marie@Maries-MacBook-Neo week2_lab % cd ~/ism3232/module_zsh
+cd: no such file or directory: /Users/marie/ism3232/module_zsh
+marie@Maries-MacBook-Neo week2_lab % pwd
+/Users/marie/ism3232/module02_zsh/week2_lab
+marie@Maries-MacBook-Neo week2_lab % cd ~/ism3232/module02_zsh
+marie@Maries-MacBook-Neo module02_zsh % code .
+marie@Maries-MacBook-Neo module02_zsh % pwd
+/Users/marie/ism3232/module02_zsh
+marie@Maries-MacBook-Neo module02_zsh % ls
+week2_lab
+marie@Maries-MacBook-Neo module02_zsh % ls -la
+total 0
+drwxr-xr-x@  3 marie  staff   96 Sep  2 18:12 .
+drwxr-xr-x@ 11 marie  staff  352 Aug 30 13:15 ..
+drwxr-xr-x   6 marie  staff  192 Sep  6 18:30 week2_lab
+marie@Maries-MacBook-Neo module02_zsh % ls
+week2_lab
+marie@Maries-MacBook-Neo module02_zsh % ls -la
+total 0
+drwxr-xr-x@  3 marie  staff   96 Sep  2 18:12 .
+drwxr-xr-x@ 11 marie  staff  352 Aug 30 13:15 ..
+drwxr-xr-x   6 marie  staff  192 Sep  6 18:30 week2_lab
+marie@Maries-MacBook-Neo module02_zsh % cd module02_zsh/week2_lab
+cd: no such file or directory: module02_zsh/week2_lab
+marie@Maries-MacBook-Neo module02_zsh % pwd
+/Users/marie/ism3232/module02_zsh
+marie@Maries-MacBook-Neo module02_zsh % cd week2_lab
+marie@Maries-MacBook-Neo week2_lab % pwd
+/Users/marie/ism3232/module02_zsh/week2_lab
+marie@Maries-MacBook-Neo week2_lab % ls -la
+total 24
+drwxr-xr-x  6 marie  staff  192 Sep  6 18:30 .
+drwxr-xr-x@ 3 marie  staff   96 Sep  2 18:12 ..
+-rw-r--r--  1 marie  staff    0 Sep  6 18:21 commands.txt
+-rw-r--r--  1 marie  staff   27 Sep  6 18:29 notes_backup.txt
+-rw-r--r--  1 marie  staff   27 Sep  6 18:23 notes.txt
+-rw-r--r--@ 1 marie  staff   25 Sep  6 18:35 week2_script.py
+marie@Maries-MacBook-Neo week2_lab % rm notes_backup.txt
+marie@Maries-MacBook-Neo week2_lab % ls
+commands.txt	notes.txt	week2_script.py
+marie@Maries-MacBook-Neo week2_lab % cd ~/ism3232/module02_zsh
+marie@Maries-MacBook-Neo module02_zsh % touch README.md
+marie@Maries-MacBook-Neo module02_zsh % code README.md
+marie@Maries-MacBook-Neo module02_zsh % 
